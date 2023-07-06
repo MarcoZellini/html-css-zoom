@@ -4,14 +4,29 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Zoom</title>
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+            integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="./assets/css/style.css">
     </head>
-    <body>
-        <header id="site_header"></header>
+    <body class>
+        <header id="site_header" class="bg-black d-flex">
+            <div class="screen_tools">
+                <button>
+                    <!-- icon square-->
+                    <i class="fa-solid fa-table-cells"></i>
+                    <span>Speaker View</span>
+                </button>
+                <button>
+                    <i class="fa-solid fa-maximize"></i>
+                </button>
+            </div>
+        </header>
         <!-- /#site_header -->
-        <main id="site_main"></main>
+        <main id="site_main" class="bg-black"></main>
         <!-- /#site_main -->
-        <footer id="site_footer"></footer>
+        <footer id="site_footer" class="bg-dark"></footer>
         <!-- /#site_footer -->
     </body>
 </html>
