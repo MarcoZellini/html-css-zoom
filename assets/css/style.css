@@ -25,12 +25,14 @@
     background-color: peachpuff;
 }
 
-.debug #site_main [class^="col-"] {
+.debug [class^="col-"] {
     background-color: palegreen;
+    padding: 1rem;
 }
 
-.debug #site_main .card {
+.debug .card {
     background-color: lightcyan;
+    min-height: 48px;
 }
 
 .debug #site_footer {
@@ -49,12 +51,24 @@
     background-color: var(--zm-dark);
 }
 
+.text-center {
+    text-align: center;
+}
+
 .d-flex {
     display: flex;
 }
 
 .col-2 {
     width: calc(100% / 14 * 2);
+}
+
+.col-3 {
+    width: calc(100% / 14 * 3);
+}
+
+.col-8 {
+    width: calc(100% / 14 * 8);
 }
 
 /* #endregion Utilities */
@@ -72,7 +86,7 @@
     top: .25rem;
 }
 
-.screen_tools button{
+.screen_tools button {
     padding: .25rem;
     border: none;
     border-radius: 5px;
@@ -86,7 +100,6 @@
 
 #site_main .container {
     height: calc(100vh - 120px);
-    
     overflow-y: auto;
 }
 
@@ -123,4 +136,25 @@
 
 #site_footer {
     height: 80px;
+    color: var(--zm-white);
+}
+
+#site_footer .container,
+#site_footer .row,
+#site_footer .card {
+    height: 100%;
+}
+
+#site_footer .microphone,
+#site_footer .webcam {
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0 .5rem;
+    gap: 1rem;
+}
+
+#site_footer .input_tools {
+    align-items: center;
+    min-height: 100%;
 }
