@@ -21,6 +21,18 @@
     background-color: paleturquoise;
 }
 
+.debug #site_main .container {
+    background-color: peachpuff;
+}
+
+.debug #site_main [class^="col-"] {
+    background-color: palegreen;
+}
+
+.debug #site_main .card {
+    background-color: lightcyan;
+}
+
 .debug #site_footer {
     background-color: palegoldenrod;
 }
@@ -39,6 +51,10 @@
 
 .d-flex {
     display: flex;
+}
+
+.col-2 {
+    width: calc(100% / 14 * 2);
 }
 
 /* #endregion Utilities */
@@ -66,10 +82,44 @@
 
 /* #endregion header */
 
+/* #region main */
 
-#site_main {
+#site_main .container {
     height: calc(100vh - 120px);
+    
+    overflow-y: auto;
 }
+
+#site_main .row {
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 90%;
+    margin: auto;
+}
+
+#site_main [class^="col-"] {
+    padding: .5rem;
+}
+
+#site_main .card {
+    height: 145px;
+    background-image: url(https://picsum.photos/seed/56/200/300);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+#site_main .username {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(40, 40, 40, 0.7);
+    color: white;
+    padding: .25rem;
+}
+
+/* #endregion main */
+
 
 #site_footer {
     height: 80px;
